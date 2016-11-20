@@ -1,0 +1,7 @@
+<h1>All messages</h1>
+<% @messages.each do |message| %>
+<a href='/messages/<%=message.id%>'>view</a>
+<p>Name: <%= message.name %> </p>
+<p>Message: <%= message.content %> </p>
+<% end %>
+<a href="/messages/new">Post a new message</a>
